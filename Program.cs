@@ -13,7 +13,7 @@
                 somma += userNumber;
             }
 
-            Console.WriteLine(somma);
+            Console.WriteLine("La somma totale dei numeri inseriti è:" + somma);
         }
     }
 }
