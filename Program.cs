@@ -4,7 +4,16 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            int somma = 0;
+
+            for (int i = 0; i < 10; i++)
+            {
+                Console.Write("Inserire il numero: ");
+                int userNumber = Int32.Parse(Console.ReadLine());
+                somma += userNumber;
+            }
+
+            Console.WriteLine(somma);
         }
     }
 }
