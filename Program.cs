@@ -1,6 +1,19 @@
 ﻿//snack5
+//il software chiede all utente un numero, se è pari viene stampato, se dispari stampo numero successivo
+
+Console.Write("Inserisci un numero");
+int numero = Int32.Parse(Console.ReadLine());
 
 
+
+if ( numero % 2 != 0)
+{
+    Console.WriteLine(numero + 1);
+}
+else
+{
+    Console.WriteLine(numero);
+}
 
 
 return;
