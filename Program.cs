@@ -1,4 +1,34 @@
-﻿//snack5
+﻿//snack10
+//fai inserire un numero, che chiameremo N, all utente
+//genera N array, ognuno formato da 10 numeri casuali tra 10 e 100, 
+//ogni volta che crei un array stampalo a schermo
+
+Random rnd = new Random();
+int numb = rnd.Next();
+Console.Write("Inserire un numero: ");
+int arrays = Int32.Parse(Console.ReadLine());
+
+for (int i = 0; i < arrays; i++)
+{
+    int[] randomNumberArray = new int[10];
+    for (int j = 0; j < 10; j++)
+    {
+        randomNumberArray[j] = rnd.Next(10, 100);
+        Console.Write(randomNumberArray[j]);
+        if (j < 10 - 1)
+        {
+            Console.Write(",");
+        }
+    }
+    Console.Write("\n");
+
+}
+
+
+
+
+return;
+//snack5
 //il software chiede all utente un numero, se è pari viene stampato, se dispari stampo numero successivo
 
 Console.Write("Inserisci un numero");
