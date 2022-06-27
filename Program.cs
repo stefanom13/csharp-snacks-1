@@ -1,4 +1,9 @@
-﻿
+﻿//snack5
+
+
+
+
+return;
 
 //snack4
 //Calcola la somma e la media dei numeri da 2 a 10;
