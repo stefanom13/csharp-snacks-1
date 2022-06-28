@@ -1,4 +1,35 @@
-﻿//esercizio fattoriale
+﻿//creare una funzione che stampa a schermo una matrice identità (quadrata)
+    
+
+return;
+
+//successione di fibonacci
+//0 1 1 2 3 5 8 13 21 34 55 ....
+//implementare un algoritmo che stampi la successione di fibonacci dato un numero
+//fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)
+
+int fibonacci(int n)
+{
+    if (n == 0)
+    {
+        return 0;
+    }
+    if (n == 1)
+    {
+        return 1;
+    }
+
+    int fib = fibonacci(n - 1) + fibonacci(n - 2);
+    return fib;
+
+}
+
+int fib = fibonacci(5);
+Console.WriteLine(fib);
+
+return;
+
+//esercizio fattoriale
 // fattoriale (5) = 5*4*3*2*1
 // fattoriale (10) = 10*9*8*7*6*5*4*3*2*1
 // fattoriale (5) = 5*fattoriale(5)
