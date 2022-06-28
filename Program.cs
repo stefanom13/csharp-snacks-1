@@ -1,4 +1,38 @@
-﻿//snack10
+﻿//Snack12.Scrivere una funzione per verificare se un numero è pari o dispari.
+//Quindi chiedere un numero all'utente e comunicargli se è pari o dispari. 
+
+//Snack11.Dare la possibilità di inserire due parole.
+//Verificare tramite una funzione che le due parole abbiano la stessa lunghezza.
+// lunghezza.
+// Se hanno la stessa lunghezza, stamparle entrambe,
+//altrimenti stampare la più lunga delle due.
+
+string PrintStrings(string first, string second)
+{
+    if (first.Length == second.Length)
+    {
+        return first + " " + second;
+    }
+    else if (first.Length > second.Length)
+    {
+        return first;
+    }
+    else
+    {
+        return second;
+    }
+}
+
+Console.WriteLine("Inserisci una parola");
+string firstString = Console.ReadLine();
+Console.WriteLine("Inserisci un'altra parola");
+string SecondString = Console.ReadLine();
+Console.WriteLine(PrintStrings(firstString, SecondString));
+
+
+
+return;
+//snack10
 //fai inserire un numero, che chiameremo N, all utente
 //genera N array, ognuno formato da 10 numeri casuali tra 10 e 100, 
 //ogni volta che crei un array stampalo a schermo
@@ -23,8 +57,6 @@ for (int i = 0; i < arrays; i++)
     Console.Write("\n");
 
 }
-
-
 
 
 return;
