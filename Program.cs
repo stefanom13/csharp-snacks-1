@@ -1,5 +1,29 @@
 ﻿//Snack12.Scrivere una funzione per verificare se un numero è pari o dispari.
 //Quindi chiedere un numero all'utente e comunicargli se è pari o dispari. 
+bool ePari(int num)
+{
+    if (num % 2 == 0)
+    {
+        return true;
+    }
+
+    return false;
+}
+
+Console.Write("\nInserisci un numero: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+Console.Write($"\nNumero {num} è ");
+if (ePari(num))
+{
+    Console.Write("pari\n");
+}
+else
+{
+    Console.Write("dispari\n");
+}
+
+return;
 
 //Snack11.Dare la possibilità di inserire due parole.
 //Verificare tramite una funzione che le due parole abbiano la stessa lunghezza.
