@@ -1,4 +1,26 @@
-﻿//Snack12.Scrivere una funzione per verificare se un numero è pari o dispari.
+﻿//esercizio fattoriale
+// fattoriale (5) = 5*4*3*2*1
+// fattoriale (10) = 10*9*8*7*6*5*4*3*2*1
+// fattoriale (5) = 5*fattoriale(5)
+// fattoriale (n) = N*fattoriale(n-1)
+
+int fattoriale (int numero)
+{
+    if (numero == 1)
+    {
+        return 1;
+    }
+    return numero * fattoriale(numero - 1);
+}
+
+int fatt = fattoriale(5);
+Console.Write(fatt);
+
+
+
+return;
+
+//Snack12.Scrivere una funzione per verificare se un numero è pari o dispari.
 //Quindi chiedere un numero all'utente e comunicargli se è pari o dispari. 
 bool ePari(int num)
 {
