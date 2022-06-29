@@ -1,5 +1,33 @@
-﻿//creare una funzione che stampa a schermo una matrice identità (quadrata)
-    
+﻿//creare una funzione che stampa a video una matrice identità (quadrata)
+//ossia una matrice di elementi pari a valore 0 eccetto
+//per i valori della diagonale della matrice che valgono 1
+
+void matriceIdentita(int dimensione)
+{
+    for (int j = 0; j < dimensione; j++)
+    {
+        for (int i = 0; i < dimensione; i++)
+        {
+            if (i == j)
+            {
+                Console.Write(1);
+            }
+            else
+            {
+                Console.Write(0);
+            }
+
+            Console.Write("");
+
+        }
+        Console.WriteLine();
+
+    }
+
+
+}
+
+
 
 return;
 
