@@ -2,7 +2,7 @@
 //ossia una matrice di elementi pari a valore 0 eccetto
 //per i valori della diagonale della matrice che valgono 1
 
-void matriceIdentita(int dimensione)
+void matriceIdentita(int dimensione = 3)
 {
     for (int j = 0; j < dimensione; j++)
     {
@@ -23,7 +23,7 @@ void matriceIdentita(int dimensione)
         Console.WriteLine();
 
     }
-
+    matriceIdentita(dimensione);
 
 }
 
